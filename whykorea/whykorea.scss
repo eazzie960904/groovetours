@@ -1,0 +1,101 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 50px;
+  }
+}
+header {
+  background: linear-gradient(white 50px);
+  height: 50px;
+  overflow: hidden;
+  transition: 0.1s;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+    > ul > li {
+      float: left;
+      line-height: 50px;
+      margin-right: 40px;
+      position: relative;
+      ul {
+        width: 100%;
+        position: absolute;
+        li {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+.main {
+  img {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+.mainTitle {
+  font-size: 2em;
+  padding: 70px;
+  text-align: center;
+}
+
+.mainDesc {
+  padding: 50px 100px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  .mainDescInner {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 0 10%;
+    .mainDescTit {
+      font-weight: 600;
+    }
+  }
+}
+
+footer {
+  .footerInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 0;
+    color: #404040;
+    font-size: 0.9em;
+    font-weight: 300;
+    .snsLogo {
+      display: flex;
+      gap: 30px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .law {
+      display: flex;
+      gap: 20px;
+      :nth-child(2) {
+        font-weight: 700;
+      }
+      div {
+        cursor: pointer;
+      }
+    }
+  }
+}
