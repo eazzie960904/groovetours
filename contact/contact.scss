@@ -89,3 +89,52 @@ header {
     }
   }
 }
+
+footer {
+  .footerInner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px 0;
+    color: #404040;
+    font-size: 0.9em;
+    font-weight: 300;
+    .snsLogo {
+      display: flex;
+      gap: 30px;
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .law {
+      display: flex;
+      gap: 20px;
+      :nth-child(2) {
+        font-weight: 700;
+      }
+      div {
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .contactImg {
+    img {
+      height: 40vh;
+    }
+  }
+
+  .contactInfo {
+    height: auto;
+    margin-top: 50px;
+    .contactInfoDesc {
+      flex-direction: column;
+    }
+  }
+}
