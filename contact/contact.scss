@@ -38,6 +38,13 @@ header {
   }
 }
 
+input {
+  display: none;
+}
+.sidebar {
+  display: none;
+}
+
 .contactTit {
   margin-top: 150px;
   width: 100%;
@@ -124,17 +131,11 @@ footer {
 }
 
 @media screen and (max-width: 950px) {
-  .contactImg {
-    img {
-      height: 40vh;
-    }
+  header {
+    display: none;
   }
-
-  .contactInfo {
-    height: auto;
-    margin-top: 50px;
-    .contactInfoDesc {
-      flex-direction: column;
-    }
+  input[id="menuIcon"] {
+    display: none;
   }
-}
+  input[id="menuIcon"] + label {
+    di

@@ -38,6 +38,13 @@ header {
   }
 }
 
+input {
+  display: none;
+}
+.sidebar {
+  display: none;
+}
+
 .aboutusTit {
   display: flex;
   justify-content: center;
@@ -113,13 +120,9 @@ footer {
 }
 
 @media screen and (max-width: 950px) {
-  .aboutusInner {
-    margin: 50px 10px;
-    .aboutusDesc {
-      width: 90%;
-    }
-    .aboutusDescLast {
-      width: 90%;
-    }
+  header {
+    display: none;
   }
-}
+  input[id="menuIcon"] {
+    display: none;
+ 
