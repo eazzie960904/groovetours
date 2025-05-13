@@ -3,9 +3,20 @@ let tourPrograms = document.querySelector("#tourPrograms");
 
 tourPrograms.addEventListener("click", function () {
   header.style.height = "260px";
+  event.stopPropagation();
 });
 
-nav.addEventListener("mouseout", function () {
+// document.addEventListener("click", function () {
+//   header.style.height = "50px";
+// });
+
+// header 클릭 시 닫히지 않도록 방지
+header.addEventListener("click", function (event) {
+  event.stopPropagation();
+});
+
+// 문서 클릭 시 닫기 (tourPrograms, header 외 클릭 시)
+document.addEventListener("click", function () {
   header.style.height = "50px";
 });
 

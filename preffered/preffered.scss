@@ -1,0 +1,61 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 50px;
+  }
+}
+header {
+  background: linear-gradient(white 50px);
+  height: 50px;
+  overflow: hidden;
+  transition: 0.1s;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 960px;
+    margin: 0 auto;
+    > ul > li {
+      float: left;
+      line-height: 50px;
+      margin-right: 40px;
+      position: relative;
+      ul {
+        width: 100%;
+        position: absolute;
+        li {
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+input {
+  display: none;
+}
+.sidebar {
+  display: none;
+}
+
+.prefferedIntro {
+  margin-top: 150px;
+  color: #1081f3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  .prefferedTit {
+    font-size: 2em;
+  }
+}
