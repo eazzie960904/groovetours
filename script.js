@@ -1,7 +1,7 @@
 let header = document.querySelector("header");
-let nav = document.querySelector("nav");
+let tourPrograms = document.querySelector("#tourPrograms");
 
-nav.addEventListener("mouseover", function () {
+tourPrograms.addEventListener("click", function () {
   header.style.height = "260px";
 });
 
