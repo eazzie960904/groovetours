@@ -81,23 +81,22 @@
           <div class="contactInfoDescHourDay">Monday - Friday</div>
         </div>
       </div>
-      <div class="contactInfoMap">
-        <div id="map" style="width: 500px; height: 400px"></div>
-        <script
-          type="text/javascript"
-          src="//dapi.kakao.com/v2/maps/sdk.js?appkey=237d2efd30e6b590cad057453dcbe195"
-        ></script>
-        <script>
-          var container = document.getElementById("map");
-          var options = {
-            center: new kakao.maps.LatLng(33.450701, 126.570667),
-            level: 3,
-          };
-
-          var map = new kakao.maps.Map(container, options);
-        </script>
-      </div>
     </section>
+
+    <div id="map" style="width: 500px; height: 400px"></div>
+    <script
+      type="text/javascript"
+      src="//dapi.kakao.com/v2/maps/sdk.js?appkey=237d2efd30e6b590cad057453dcbe195"
+    ></script>
+    <script>
+      var container = document.getElementById("map");
+      var options = {
+        center: new kakao.maps.LatLng(33.450701, 126.570667),
+        level: 3,
+      };
+
+      var map = new kakao.maps.Map(container, options);
+    </script>
 
     <footer>
       <div class="footerInner">
