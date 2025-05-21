@@ -72,6 +72,7 @@ input {
 .main {
   display: flex;
   .mainInner {
+    width: 100%;
     display: flex;
     gap: 50px;
     padding: 50px;
@@ -270,15 +271,11 @@ footer {
         .mainImg {
           .mainImgRow {
             flex-direction: column;
+            img {
+              width: 100%;
+              height: 100%;
+            }
           }
         }
       }
-    }
-  }
-  .description {
-    .descInner {
-      display: flex;
-      flex-direction: column;
-    }
-  }
-}
+   
